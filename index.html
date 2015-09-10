@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Será que vai chover hoje?</title>
+    <meta name="application-name" content="Será que vai chover hoje?">
+    <meta name="description" content="">
+    <meta name="author" content="Rainforcements">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Será que vai chover hoje?</h1>
+    </header>
+    <main>
+        <h2 hidden>Dados pluviométricos</h2>
+        <section>
+            <h3 hidden>Dados da localidade</h3>
+            <form>
+                <input type="text" placeholder="Digite o nome da sua cidade" autocomplete="off" id="cityName" />
+                <input type="button" onclick="makeIt()" value="Enviar"/>
+            </form>
+            <p>
+                <a href="javascript:getLocation();" titl="Clique para obter a sua localização">Obter localização automaticamente</a>
+            </p>
+            <div id="mapHolder" style="display: none;"></div>
+        </section>
+        <section style="display: none;" id="dadosRetorno">
+            <h3 hidden>Dados retornados para a localidade</h3>
+            <dl>
+                <dt>Cidade</dt>
+                <dd id="name"></dd>
+                <dt>Data da consulta</dt>
+                <dd id="date"></dd>
+                <dt>Precipitação (mm)</dt>
+                <dd id="mm"></dd>
+                <dt>Reservatório</dt>
+                <dd id="reservoir"></dd>
+                <dt>Reservatório %</dt>
+                <dd id="reservoirPer"></dd>
+                <dt>PassadoMM</dt>
+                <dd id="passado"></dd>
+                <dt>FuturoMM</dt>
+                <dd id="futuro"></dd>
+                <dt>Indice</dt>
+                <dd id="indice"></dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo grupo "Rainforcements"</p>
+        <p>São José dos Campos, <time datetime="2015-07-25">25 de julho de 2015</time></p>
+        <p><code>think.make.move()</code></p>
+	</footer>
+    <!-- Javascript -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="location.js"></script>
+    <script type="text/javascript" src="ajax.js"></script>
+    <script type="text/javascript" src="chuva.js"></script>
+</body>
+</html>

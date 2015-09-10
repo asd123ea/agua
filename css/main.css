@@ -1,0 +1,226 @@
+html {
+    width: 100%;
+    background-color: white;
+}
+
+/*
+Color Palette:
+    main: #011f4b
+    secondary: #b3cde0
+    links: #03396c
+    hover: #005b96
+    other: #6497b1
+*/
+
+body {
+    margin: 0 auto;
+    max-width: 600px;
+    color: #011f4b;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus {
+    background-color: #6497b1;
+}
+
+a, a:visited {
+    color: #03396c;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #005b96;
+    text-decoration: underline;
+}
+
+input[type="text"] {
+    width: 75%;
+    margin: 0;
+    padding: 6px;
+    font-weight: 300;
+    font-size: 1.6em;
+}
+
+input[type="button"], button {
+    vertical-align: top;
+    width: 15%;
+    margin: 0;
+    border: medium none;
+    border-radius: 4px;
+    background-color: #03396c;
+    padding: 14px 10px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type="button"]:hover, button:hover {
+    background-color: #005b96;
+}
+
+code {
+    font-weight: 300;
+    font-size: 0.8em;
+    font-family: Liberation Mono, Consolas, Monaco, Lucida Console, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+}
+
+header, main, aside, footer {
+	display: block;
+    margin-bottom: 1%;
+}
+
+header {
+    margin-bottom: 0;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+main {
+    padding: 30px 15px;
+    font-size: 1.1em;
+}
+
+main.center {
+    text-align: center;
+}
+
+main p {
+    line-height: 1.6em;
+}
+
+main small {
+    font-size: 0.7em;
+}
+
+main #mapHolder {
+    width: 576px;
+    height: 432px
+}
+
+main dl {
+    margin: 15px 0;
+}
+
+main dt {
+    margin-bottom: 5px;
+    color: #b3cde0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+main dd {
+    margin: 5px 0 20px;
+    text-transform: uppercase;
+}
+
+main dd small {
+    font-size: 0.8em;
+}
+
+main img {
+    margin: 15px;
+}
+
+aside {
+    margin: 0 2% 2%;
+    border: 1px #b3cde0 solid;
+    padding: 20px 15px;
+    color: #b3cde0;
+    font-size: 0.9em;
+}
+
+aside h2 {
+    font-size: 1.2em;
+}
+
+aside p {
+    line-height: 1.4em;
+}
+
+footer {
+	margin-bottom: 0;
+    border-top: 1px #011f4b solid;
+    padding: 25px 15px;
+	text-align: center;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+footer p {
+    line-height: 1em;
+}
+
+footer code {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 481px) and (max-width: 540px) {
+    body {
+        font-size: 15px;
+    }
+    
+    main #mapHolder {
+        width: 512px;
+        height: 384px
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    main #mapHolder {
+        width: 448px;
+        height: 336px;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 420px) {
+    body {
+        font-size: 13px;
+    }
+    
+    main #mapHolder {
+        width: 416px;
+        height: 312px;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 360px) {
+    body {
+        font-size: 12px;
+    }
+    
+    main #mapHolder {
+        width: 320px;
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 241px) and (max-width: 300px) {
+    body {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    body {
+        font-size: 10px;
+    }
+}
